@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BootstrapTable, 
        TableHeaderColumn} from 'react-bootstrap-table';
-import '../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css'
+import '../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css';
  
  
 function onInsertRow(row) {
@@ -17,6 +17,12 @@ function onInsertRow(row) {
 function onDeleteRow(rowKeys) {
 
 }
+
+let data = [
+  {taskId: 1, cryptocurrency: 'Bitcoin', startTime: '02:15', estimatedEndTime: '21:34', currentReturn: '$5218.93'},
+  {taskId: 2, cryptocurrency: 'Etherium', startTime: '12:43', estimatedEndTime: '22:34', currentReturn: '$19739.32'},
+  {taskId: 3, cryptocurrency: 'Ren', startTime: '16:39', estimatedEndTime: '19:12', currentReturn: '-$321.95'}
+];
  
 class RunningTasks extends Component {
   render() {
@@ -32,7 +38,7 @@ class RunningTasks extends Component {
  
     return (
       <div>
-        <BootstrapTable data={this.props.data}
+        <BootstrapTable data={data}
                         insertRow={true}
                         deleteRow={true}
                         selectRow={selectRowProp}

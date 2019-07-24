@@ -10,7 +10,8 @@ export default class AddNewTask extends Component {
       risk: 'low',
       start: '00:00',
       end: '00:00',
-      maxreturn: '100%'
+      maxreturn: '100%',
+      data: {}
     };
 
     this.handleRiskChange = this.handleRiskChange.bind(this);
