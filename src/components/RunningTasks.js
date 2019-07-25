@@ -19,9 +19,9 @@ function onDeleteRow(rowKeys) {
 }
 
 let data = [
-  {taskId: 1, cryptocurrency: 'Bitcoin', startTime: '02:15', estimatedEndTime: '21:34', currentReturn: '$5218.93'},
-  {taskId: 2, cryptocurrency: 'Etherium', startTime: '12:43', estimatedEndTime: '22:34', currentReturn: '$19739.32'},
-  {taskId: 3, cryptocurrency: 'Ren', startTime: '16:39', estimatedEndTime: '19:12', currentReturn: '-$321.95'}
+  {taskId: 1, cryptocurrency: 'Bitcoin', startTime: '02:15', estimatedEndTime: '21:34', currentReturn: '$5218.93', displayLog: 'Display Log'},
+  {taskId: 2, cryptocurrency: 'Etherium', startTime: '12:43', estimatedEndTime: '22:34', currentReturn: '$19739.32', displayLog: 'Display Log'},
+  {taskId: 3, cryptocurrency: 'Ren', startTime: '16:39', estimatedEndTime: '19:12', currentReturn: '-$321.95', displayLog: 'Display Log'}
 ];
  
 class RunningTasks extends Component {
@@ -69,6 +69,11 @@ class RunningTasks extends Component {
                              dataAlign='center'
                              headerAlign="center">
             Current Return
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='displayLog'
+                             dataAlign='center'
+                             headerAlign="center">
+            Log
           </TableHeaderColumn>
         </BootstrapTable>
       </div>

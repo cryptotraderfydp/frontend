@@ -10,9 +10,8 @@ export default class Home extends Component {
     return (
       <div>
         <h1>
-          Home
         </h1>
-        <img src={logo} alt="Logo" />
+        <img src={logo} style={{textAlign: 'center'}} alt="Logo" />
       </div>
     );
   }
