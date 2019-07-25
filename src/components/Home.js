@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from '../logo.png';
 
 export default class Home extends Component {
   // static propTypes = {}
@@ -11,6 +12,7 @@ export default class Home extends Component {
         <h1>
           Home
         </h1>
+        <img src={logo} alt="Logo" />
       </div>
     );
   }
