@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import image2year from '../assets/2year-LSTM.png';
 
 export default class Metrics extends Component {
   // static propTypes = {}
@@ -9,8 +10,9 @@ export default class Metrics extends Component {
     return (
       <div>
         <h1>
-          Metrics
+          Perfomance metrics:
         </h1>
+        <img src={image2year} alt='2year' style={{width: '1200px'}}/>
       </div>
     );
   }
